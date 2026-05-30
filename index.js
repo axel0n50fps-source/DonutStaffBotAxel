@@ -295,7 +295,7 @@ async function updateTracker() {
             if (found) {
 
                 online.push(
-                    `<:online_discord:1510364784548380732> ${staff}`
+                    `<:online_discord:1510372548414537961> ${staff}`
                 );
 
                 lastSeen[staff] = {
@@ -453,7 +453,7 @@ client.on(
 
                             value:
                                 data.online
-                                    ? '<:online_discord:1510364784548380732> Online'
+                                    ? '<:online_discord:1510372548414537961> Online'
                                     : '<:offline_discord:1510364653941690490> Offline',
 
                             inline: true
