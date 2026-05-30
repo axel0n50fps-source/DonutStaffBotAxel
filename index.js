@@ -319,6 +319,7 @@ async function updateTracker() {
                         lastSeen:
                             Math.floor(Date.now() / 1000)
                     };
+                }
             }
         }
 
