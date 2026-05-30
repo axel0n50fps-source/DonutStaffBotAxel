@@ -343,17 +343,16 @@ async function updateTracker() {
                         '<:zzerio:1510284681931915284> Live Updates',
 
                     value:
-                        'Automatically refreshed every 15 seconds.'
+                        '-# Automatically refreshed every 15 seconds.'
                 })
 
                 .setColor('#7CFF3B')
 
                 .setFooter({
                     text:
-                        'Real-time staff activity monitoring'
+                        '-# Real-time staff activity monitoring'
                 })
 
-                .setTimestamp();
 
         const menu =
             new StringSelectMenuBuilder()
