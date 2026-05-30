@@ -340,7 +340,7 @@ async function updateTracker() {
 
                 .addFields({
                     name:
-                        '<:zzerio:1503682352700854282> Live Updates',
+                        '<:zzerio:1510284681931915284> Live Updates',
 
                     value:
                         'Automatically refreshed every 15 seconds.'
@@ -432,7 +432,7 @@ client.on(
                     new EmbedBuilder()
 
                         .setTitle(
-                            `<:zzerio:1503682352700854282> Staff Information • ${selected}`
+                            `<:zzerio:1510284681931915284> Staff Information • ${selected}`
                         )
 
                         .setColor(
