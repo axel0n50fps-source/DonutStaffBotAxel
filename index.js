@@ -295,7 +295,7 @@ async function updateTracker() {
             if (found) {
 
                 online.push(
-                    `🟢 ${staff}`
+                    `<:online_discord:1510364784548380732> ${staff}`
                 );
 
                 lastSeen[staff] = {
@@ -329,7 +329,7 @@ async function updateTracker() {
             new EmbedBuilder()
 
                 .setTitle(
-                    '🍩 DonutSMP Staff Tracker'
+                    '<:Zerio_Client_fidget:1510284681931915284> Zerio Staff Tracker'
                 )
 
                 .setDescription(
@@ -340,13 +340,13 @@ async function updateTracker() {
 
                 .addFields({
                     name:
-                        'Live Updates',
+                        '<:zzerio:1503682352700854282> Live Updates',
 
                     value:
                         'Automatically refreshed every 15 seconds.'
                 })
 
-                .setColor('Orange')
+                .setColor('#7CFF3B')
 
                 .setFooter({
                     text:
@@ -432,11 +432,11 @@ client.on(
                     new EmbedBuilder()
 
                         .setTitle(
-                            `Staff Information • ${selected}`
+                            `<:zzerio:1503682352700854282> Staff Information • ${selected}`
                         )
 
                         .setColor(
-                            'Orange'
+                            '#7CFF3B'
                         );
 
                 if (!data) {
@@ -454,8 +454,8 @@ client.on(
 
                             value:
                                 data.online
-                                    ? '🟢 Online'
-                                    : '🔴 Offline',
+                                    ? '<:online_discord:1510364784548380732> Online'
+                                    : '<:offline_discord:1510364653941690490> Offline',
 
                             inline: true
                         },
@@ -526,7 +526,7 @@ client.on(
                 new EmbedBuilder()
 
                     .setTitle(
-                        '🍩 DonutSMP Staff Tracker'
+                        '<:Zerio_Client_fidget:1510284681931915284> Zerio Staff Tracker'
                     )
 
                     .setDescription(
@@ -542,7 +542,7 @@ client.on(
                     })
 
                     .setColor(
-                        'Orange'
+                        '#7CFF3B'
                     )
 
                     .setFooter({
