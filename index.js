@@ -312,15 +312,13 @@ async function updateTracker() {
                     !lastSeen[staff] ||
                     lastSeen[staff].online === true
                 ) {
-
                     lastSeen[staff] = {
 
                         online: false,
 
                         lastSeen:
-                            new Date().toLocaleString()
+                            Math.floor(Date.now() / 1000)
                     };
-                }
             }
         }
 
@@ -466,7 +464,9 @@ client.on(
                                 'Last Seen',
 
                             value:
-                                data.lastSeen,
+                                data.online
+                                    ? 'Currently Online'
+                                    : `<t:${data.lastSeen}:F>\n(<t:${data.lastSeen}:R>)`,
 
                             inline: true
                         }
